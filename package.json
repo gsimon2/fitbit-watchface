@@ -1,4 +1,7 @@
 {
+  "devDependencies": {
+    "@fitbit/sdk": "~4.2.0"
+  },
   "fitbit": {
     "appUUID": "b5e804f8-15ea-4f11-b5d4-019efb0b4b2b",
     "appType": "clockface",
@@ -10,13 +13,13 @@
       "access_heart_rate"
     ],
     "buildTargets": [
-      "higgs",
-      "meson"
+      "higgs"
     ],
     "i18n": {
-      "en": {
+      "en-US": {
         "name": "loki_adaption"
       }
-    }
+    },
+    "defaultLanguage": "en-US"
   }
 }

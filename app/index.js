@@ -65,7 +65,7 @@ display.onchange = function() {
 //-------------------------------------------------------------------------
 clock.granularity = 'seconds';
 
-let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];l
+let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 let months = ["Jan", "Feb",  "Mar",  "Apr",  "May",  "Jun",  "Jul",  "Aug",  "Sep",  "Oct",  "Nov", "Dec"];
 
 clock.ontick = function(evt) {
@@ -144,7 +144,7 @@ weather.onsuccess = showWeather
 weather.onerror = (error) => {
   console.log("Weather error " + JSON.stringify(error))
   
-  document.getElementById("location").text = JSON.stringify(error)
+  // document.getElementById("location").text = JSON.stringify(error)
 }
 
 let fetchWeather = function(){
@@ -177,6 +177,24 @@ function refresh_myActivity() {
 setInterval(refresh_myActivity, 1000);
 
 
+//-------------------------------------------------------------------------
+//                Debug
+//-------------------------------------------------------------------------
+ function listProperties(object) {
+ for(var key in object) {
+   try{
+     console.log('Key: ' + key + ' | value: ' + object[key]);
+     // recursion breaks the simulator
+     // if ( object[key] == '[object Object]') {
+     //   listProperties(object[key], '    ' + key + '.');
+     // }
+   } catch (error) {
+    // Some values throw an error when trying to access them.
+    console.log('Key: ' + key + ' | Error: ' + error.message);
+   }
+  }   
+}
+
 
 //-------------------------------------------------------------------------
 //                Button + State Handling
@@ -185,11 +203,10 @@ var systemState = 1;
 var numberSystemStates = 3;
 var leftButton = document.getElementById("leftButton");
 var rightButton = document.getElementById("rightButton");
+listProperties(leftButton)
 var buttonSeq = [];
 update_state();
-
-
-
+setTimeout(show_secret, 5000);
 
 leftButton.onactivate = function (evt) {
   systemState = (systemState - 1)
@@ -268,13 +285,24 @@ function update_state() {
   }//switch
 }//function
 
+function show_secret () {
+   systemState = 0;
+   update_state();
+   hide_all_elements()
+   showElement(myImage2);
+   mySecretMsg1.text = "Happy Birthday!";
+   mySecretMsg2.text = "I love you! <3";
+   showElement(mySecretMsg1);
+   showElement(mySecretMsg2);
+   buttonSeq = [];
+}
 
 
 //-------------------------------------------------------------------------
 //               Detect if a sequence of buttons have been hit
 //-------------------------------------------------------------------------
 function detect_seq (button_press) {
-  //console.log("Entered Function!");
+  console.log("Entered Function!");
   
   let secretSeq = ['left', 'right', 'left', 'left'];
   
