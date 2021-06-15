@@ -1,0 +1,47 @@
+<svg >
+  <defs>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_common.css" />
+    <link rel="import" href="/mnt/sysassets/widgets_common.gui" />
+    <!-- Additional Imports -->
+    <link rel="import" href="/mnt/sysassets/widgets/push_button_widget.gui" />
+  </defs>  
+  
+  <image id="myImage1" href="images/loki_beach.jpg" />
+  <image id="myImage2" href="images/mae_glen_montanna.jpg" />
+  
+  <image id="heartRateIcon" href="images/stat_hr_solid_32px.png" x="0%" y="79%" height="22%" width="22%" class="icons"/>
+  
+  
+  <text id="myDate"></text>
+  <text id="myTime"></text>
+  <text id="myHR"></text>
+  <text id="myPower"></text>
+  
+  <text id="mySteps"></text>
+  <text id="myCalories"></text>
+  <text id="myActiveMinutes"></text>
+  <text id="myLocation"></text>
+  <text id="myDescription"></text>
+  <text id="myTemp"></text>
+  
+  <text id="myDebug"></text>
+  <text id="mySecretMsg1"></text>
+  <text id="mySecretMsg2"></text>
+  
+   
+  <use id="leftButton" href="#push-button" height="100%" width="50%"
+    fill="fb-red" opacity="0" font-family="System-Regular" font-size="40">
+    <set href="#text" attributeName="text-buffer" to="leftButton" />
+    <set href="#text" attributeName="fill" to="fb-peach" />
+    <set href="#text" attributeName="y" to="12" />
+  </use>
+  
+  <use id="rightButton" href="#push-button" x="50%" height="100%" width="50%"
+    fill="fb-blue" opacity="0" font-family="System-Regular" font-size="40">
+    <set href="#text" attributeName="text-buffer" to="rightButton" />
+    <set href="#text" attributeName="fill" to="fb-peach" />
+    <set href="#text" attributeName="y" to="12" />
+  </use>
+  
+  </svg>

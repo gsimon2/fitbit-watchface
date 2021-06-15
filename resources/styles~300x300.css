@@ -1,0 +1,61 @@
+
+
+#mySteps {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 10%;
+  fill: white;
+}
+
+#myCalories {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 25%;
+  fill: white;
+}
+
+#myActiveMinutes {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 40%;
+  fill: white;
+}
+
+#myLocation {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 60%;
+  fill: white;
+}
+
+#myDescription {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 75%;
+  fill: white;
+}
+
+#myTemp {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 90%;
+  fill: white;
+}

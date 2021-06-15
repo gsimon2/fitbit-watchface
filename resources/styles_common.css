@@ -1,0 +1,74 @@
+
+.background {
+  viewport-fill: red;
+}
+
+#myDate {
+  font-size: 50;
+  font-family: Tungsten-Medium;
+  text-length: 200;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%;
+  fill: white;
+}
+
+#myTime {
+  font-size: 70;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 35%;
+  fill: white;
+}
+
+#myHR {
+  font-size: 50;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 11%;
+  y: 95%;
+  fill: red;
+}
+
+#myPower {
+  font-size: 50;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 90%;
+  y: 95%;
+  fill: white;
+}
+
+#mySecretMsg1 {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 13%;
+  fill: white;
+}
+
+#mySecretMsg2 {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 90%;
+  fill: white;
+}
+
+#myDebug {
+  font-size: 40;
+  font-family: Tungsten-Medium;
+  text-length: 1000;
+  text-anchor: middle;
+  x: 50%;
+  y: 10%+15;
+  fill: white;
+}

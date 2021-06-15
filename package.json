@@ -1,0 +1,22 @@
+{
+  "fitbit": {
+    "appUUID": "b5e804f8-15ea-4f11-b5d4-019efb0b4b2b",
+    "appType": "clockface",
+    "appDisplayName": "loki_adaption",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "loki_adaption"
+      }
+    }
+  }
+}
